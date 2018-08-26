@@ -14,6 +14,10 @@ import java.io.Serializable;
 public class SampleEntity implements Serializable {
     private String message;
 
+    public SampleEntity() {
+        // required for jackson
+    }
+
     public SampleEntity(String message) {
         this.message = message;
     }
